@@ -1,4 +1,4 @@
-:root {
+ :root {
   --primary-color: #4CAF50;
   --primary-hover: #45a049;
   --background-color: #f4f7f8;
@@ -15,6 +15,26 @@ body {
   background: #9DC183;
   color: var(--text-color);
   line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .header-content, .feature-card, .guide-container {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr; /* stack in 1 column on phones */
+  }
+
+  .search-tools {
+    flex-direction: column;
+  }
 }
 
 header {
